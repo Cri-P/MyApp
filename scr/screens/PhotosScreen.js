@@ -1,11 +1,14 @@
 import React from 'react';
+import { StyleSheet } from 'react-native';
 import {View, Text} from "react-native";
-import { StyleSheet} from 'react-native';
+import MyButton from '../components/MyButton';
 
-function HomeScreen(props) {
+function MyPhotos(props) {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}> This is the Home Page</Text>
+            <Text style={styles.text}> These are my photos</Text>
+            <MyButton/>
+            
         </View>
 
     );
@@ -16,14 +19,16 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: '#D0B9DD',
         alignItems: 'center',
-        justifyContent: 'center',
-        fontSize:20
+        justifyContent: 'space-between'
     },
     text:{
         color:"#FFC8DD",
         fontWeight: "bold",
         fontSize:20
+        
+
+
     }
 })
 
-export default HomeScreen;
+export default MyPhotos;
