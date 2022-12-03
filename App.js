@@ -4,15 +4,24 @@ import WelcomeScreen from './scr/screens/WelcomeScreen';
 import ProfileScreen from './scr/screens/ProfileScreen';
 import HomeScreen from './scr/screens/HomeScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from "@react-navigation/native"
+import { NavigationContainer } from "@react-navigation/native";
+// import Icon from "react-native-vector-icons/Ionicons";
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
-  animationEnabled: true
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+      // screenOptions={({routes}) => ({
+      //   headerShown: false,
+      //   tabBarIcon:({color, size}) => {
+      //     return <Icon size={22} color={"#BDE0FE"} />
+
+      //   }
+
+      // })}
+      >
       <Tab.Screen name="Welcome" component={WelcomeScreen} />
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
@@ -21,12 +30,3 @@ export default function App() {
   );
 }
 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
