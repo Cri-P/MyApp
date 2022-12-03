@@ -7,7 +7,7 @@ import { StyleSheet} from 'react-native';
 function WelcomeScreen({navigation}) {
     return (
         <View style={styles.container}>
-        <Text style={styles.text}> This is my Welcome Page</Text>
+        <Text style={styles.text}> Welcome to my Studio App</Text>
         <StatusBar style="auto" />
     </View>
     );
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         
     },
     text:{
-        color:"#FFC8DD",
+        color:"#0E8AFF",
         fontWeight: "bold",
         fontSize:20
     }
