@@ -2,6 +2,8 @@ import React from 'react';
 import {View, Text} from "react-native";
 import { StyleSheet} from 'react-native';
 
+
+
 function HomeScreen(props) {
     return (
         <View style={styles.container}>
@@ -20,7 +22,7 @@ const styles = StyleSheet.create({
         fontSize:20
     },
     text:{
-        color:"#FFC8DD",
+        color:"#0E8AFF",
         fontWeight: "bold",
         fontSize:20
     }
