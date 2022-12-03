@@ -1,13 +1,19 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import {View, Text,Button} from "react-native";
 
 
-function WelcomeScreen(props) {
+function WelcomeScreen({navigation}) {
     return (
         <View>
         <Text> This is my Welcome Page</Text>
-        <Button>Welcome Button</Button>
+        <StatusBar style="auto" />
     </View>
     );
 }
+
+
+
+
 
 export default WelcomeScreen;

@@ -1,10 +1,10 @@
 import React from 'react';
+import {View, Text,Button} from "react-native";
 
 function ProfileScreen(props) {
     return (
         <View>
         <Text> This is my Profile Page</Text>
-        <Button>Profile Button</Button>
     </View>
 
     );
